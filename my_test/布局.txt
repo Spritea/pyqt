@@ -1,0 +1,1 @@
+按照之前54所项目界面，右边控件是QTextBrowser，中间控件应该是QLabel
