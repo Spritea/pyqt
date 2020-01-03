@@ -13,6 +13,8 @@ def open_file_ext(self):
     fname = QFileDialog.getOpenFileName(self, 'Open file', '/')
     self.current_path=fname[0]
     self.img_ori=QImage(fname[0])
+    self.ori_width = self.img_ori.width()
+    self.ori_height = self.img_ori.height()
     self.pixmap = QPixmap.fromImage(self.img_ori)
     self.load_func()
     self.textbrowser.append('Open file %s' %fname[0])
